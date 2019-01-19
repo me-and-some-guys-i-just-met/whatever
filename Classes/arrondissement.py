@@ -6,5 +6,8 @@ class Arrondissement:
         self.size = size
         self.population = population
 
+    def __repr__(self):
+        return self.name + " has population " + str(self.population)
+
     def density(self):
         return population / size
