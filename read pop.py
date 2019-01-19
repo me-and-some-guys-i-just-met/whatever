@@ -9,10 +9,12 @@ with open("Classes/population-quartiers-anciens-territoires-administratifs.csv")
   for line in pop_file:
       #print(line.split(','))
       name, unused, popu = line.strip().split(',')
+      name=name.strip('"')
       burrows[name]=popu
 
 
 for i in burrows:
     burrows_object[i]=Arrondissement(i,0,0,burrows.get(i))
+    print(burrows_object.get(i))
 
-print(burrows_object)
+##print(burrows_object)
