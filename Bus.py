@@ -1,6 +1,6 @@
 class BusLine(object):
     '''
-    Bus class that re
+    This Bul
     '''
     def __init__(self, stop_list = [], bus_id = None):
         self.stop_list = stop_list
