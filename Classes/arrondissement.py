@@ -4,3 +4,6 @@ class Arrondissement(self):
         self.stops = stops
         self.size = size
         self.population = population
+
+    def density(self):
+        return population / size
