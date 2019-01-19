@@ -1,5 +1,7 @@
-class Bus(object):
-
+class BusLine(object):
+    '''
+    Bus class that re
+    '''
     def __init__(self, stop_list = [], bus_id = None):
         self.stop_list = stop_list
         self.bus_id = bus_id
@@ -10,4 +12,4 @@ class Bus(object):
     def set_BusID(self, newid):
         self.bus_id = newid
 
-    #Might need to extend class in the future 
+    #Might need to extend class in the future
