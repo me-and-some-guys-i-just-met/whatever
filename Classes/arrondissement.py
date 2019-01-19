@@ -1,4 +1,4 @@
-class Arrondissement(self):
+class Arrondissement:
 
     def __init__(self, stops, size, population):
         self.stops = stops
