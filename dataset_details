@@ -1,0 +1,13 @@
+the data in the dataset that we're interested in
+
+routes.txt
+route_id, x, route_short_name, route_long_name, x, x, x, x
+
+trips.txt
+route_id, x, trip_id, x, x, x, x, x, x
+
+stops.txt
+stop_id, stop_code, stop_name, x, x, x, x, x, x
+
+stop_times.txt
+trip_id, x, x, stop_id, x
