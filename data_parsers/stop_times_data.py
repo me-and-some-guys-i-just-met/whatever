@@ -1,4 +1,6 @@
-with open("/home/dan/downloads/gtfs_stm/stop_times.txt") as stop_times_file:
+from local_data_dir import data_dir
+
+with open(data_dir + "gtfs_stm/stop_times.txt") as stop_times_file:
     print("skip first line: ", stop_times_file.readline())
     for line in stop_times_file:
         print(line)
