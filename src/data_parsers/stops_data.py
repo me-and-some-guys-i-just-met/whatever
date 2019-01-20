@@ -15,5 +15,4 @@ with open(data_dir + "gtfs_stm/stops.txt") as stops_file:
         set_of_coord.add((stop_id, stop_lat,stop_lon))
         #print(set_of_coord)
 
-print(len(set_of_coord))
-
+#print(len(set_of_coord))
