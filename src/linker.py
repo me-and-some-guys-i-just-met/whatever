@@ -1,4 +1,4 @@
-stops=open("../data/Borough_results.txt","r")
+stops=open("../data/Borough_Results.txt","r")
 borough=open("../data/Boroughs_of_Montreal","r")
 
 counts=dict()
@@ -13,7 +13,7 @@ for name in borough:
     the_count=stop.count(the_name[0])
     the_people=the_name[2]
     the_area=the_name[1]
-    print(the_name)
+    ##print(the_name)
     #count+=the_count
     ratio=(the_count/((float(the_people)*float(the_area))))
     counts[the_name[0]]=the_count
@@ -21,6 +21,6 @@ for name in borough:
     
     
 
-
 print(ratios)
+
 
