@@ -1,4 +1,4 @@
-src/data_parsers/local_data_dir.py
+**/local_data_dir.py
 data_parsers/api_key.py
 *__pycache__*
 *.pyc
