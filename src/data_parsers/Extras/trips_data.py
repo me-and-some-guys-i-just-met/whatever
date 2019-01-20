@@ -1,4 +1,4 @@
-#DEPRECATED
+#NOT USED
 from local_data_dir import data_dir
 
 with open(data_dir + "gtfs_stm/trips.txt") as trips_file:

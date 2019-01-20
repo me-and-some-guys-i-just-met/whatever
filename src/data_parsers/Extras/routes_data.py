@@ -1,4 +1,4 @@
-#DEPRECATED
+#NOT USED
 from local_data_dir import data_dir
 
 with open(data_dir + "gtfs_stm/routes.txt") as routes_file:

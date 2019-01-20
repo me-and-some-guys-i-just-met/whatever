@@ -1,3 +1,4 @@
+#NOT USED
 class BusLine(object):
 '''
 The BusLine class represents a STM bus line with a unique bus ID/Name

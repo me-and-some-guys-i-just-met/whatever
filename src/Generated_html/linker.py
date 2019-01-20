@@ -3,7 +3,7 @@ import plotly.graph_objs as go
 
 #opens Ville de Montreal and STM datasets
 stops=open("../data/Borough_Results.txt","r")
-borough=open("../data/Boroughs_of_Montreal","r")
+borough=open("../data/formated_boroughs.txt","r")
 
 #Dictionnarys of calculated statistics
 counts=dict()
