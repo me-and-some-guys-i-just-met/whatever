@@ -4,6 +4,5 @@
 *.pyc
 *.pyo
 **/_cache
-**/_site
 **/site
 **/.DS_Store
