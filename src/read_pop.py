@@ -3,7 +3,7 @@ from data_parsers.local_data_dir import data_dir
 
 burrows=dict()
 burrows_object=dict()
-with open("Classes/population-quartiers-anciens-territoires-administratifs.csv") as pop_file:
+with open("../data/population-quartiers-anciens-territoires-administratifs.csv") as pop_file:
   for i in range(5):
     pop_file.readline()
   for line in pop_file:
