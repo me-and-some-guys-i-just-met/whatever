@@ -7,7 +7,7 @@ trips.txt
 route_id, x, trip_id, x, x, x, x, x, x
 
 stops.txt
-stop_id, stop_code, stop_name, x, x, x, x, x, x
+stop_id, stop_code, stop_name, stop_lat, stop_lon, x, x, x, x
 
 stop_times.txt
 trip_id, x, x, stop_id, x
