@@ -17,8 +17,11 @@ def getAddress(key, latlng):
     response = requests.get(req)
     if response.status_code == 200:
         loc_json = json.loads(response.content)
-        final_address = [loc_json['results'][0]['address_components'][0]['long_name'], loc_json['results'][0]['address_components'][1]['long_name'], loc_json['results'][0]['address_components'][2]['long_name']]
-        print(final_address)
+        final_address = []
+        try:
+            final_address.append(loc_json['results'][0]['address_components'][2]['long_name'])
+        except Exception as e:
+            return None
     else:
         print(type(response.status_code))
-    return
+    return final_address[0]
