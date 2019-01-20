@@ -23,5 +23,5 @@ def getAddress(key, latlng):
         except Exception as e:
             return None
     else:
-        print(type(response.status_code))
+        return None
     return final_address[0]
