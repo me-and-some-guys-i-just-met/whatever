@@ -1,5 +1,5 @@
 **/local_data_dir.py
-data_parsers/api_key.py
+**/api_key.py
 *__pycache__*
 *.pyc
 *.pyo
