@@ -10,18 +10,18 @@ import json
 #Optional street_type: street_address | route | intersection | locality
 
 url = r'https://maps.googleapis.com/maps/api/geocode/json?'
+# url = r'https://danso.ca/aoueahtns/json?'
 
-def getAddress(key, latlng):
-    global url
-    req = url + 'latlng=' + latlng[0] + ',' + latlng[1] + '&location_type=ROOFTOP&result_type=street_address'+'&key=' + key
+def getAddress(key, lat, lon):
+    req = url + 'latlng=' + lat + ',' + lon + '&location_type=ROOFTOP&result_type=street_address'+'&key=' + key
     response = requests.get(req)
+    boro = None
     if response.status_code == 200:
         loc_json = json.loads(response.content)
-        final_address = []
         try:
-            final_address.append(loc_json['results'][0]['address_components'][2]['long_name'])
-        except Exception as e:
-            return None
-    else:
-        return None
-    return final_address[0]
+            boro = loc_json['results'][0]['address_components'][2]['long_name']
+        except Exception as e: # malformed JSON
+            print("error: parsing: " + str(e))
+    else: # not 200
+        print("error: HTTP " + str(response.status_code))
+    return boro
