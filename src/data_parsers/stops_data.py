@@ -3,7 +3,7 @@ import Geolocation
 
 set_of_coord=set()
 print(set_of_coord)
-with open(data_dir) as stops_file:
+with open(data_dir + "gtfs_stm/stops.txt") as stops_file:
     #print("skip first line: ", stops_file.readline())
     for line in stops_file:
         stop_id, stop_code, stop_name, stop_lat, stop_lon, unused, unused, unused, unused = line.split(",")
