@@ -15,4 +15,4 @@ with open("../data/population-quartiers-anciens-territoires-administratifs.csv")
       burrows[name] = Arrondissement(name, stops, area, popu)
 
 for boro in burrows:
-    print(boro + ": " + str(burrows.get(i)))
+    print(boro + ": " + str(burrows.get(boro)))
