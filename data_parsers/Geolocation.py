@@ -1,5 +1,5 @@
 import requests
-#AlzaSyAgg6LrGSWMB_qXc9_I4kKn6Nx3IS-eChM
+from api_key import key
 
 #Reverse GeoCoding
 #required parameters:
