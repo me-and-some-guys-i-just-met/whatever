@@ -1,2 +1,1 @@
-data_dir = ""
-
+data_dir = "/home/dan/downloads/"
