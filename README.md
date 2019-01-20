@@ -1,4 +1,3 @@
-# whatever
-#
+# Try harder, STM
 
-Goal: For all the Boroughs in the Island of Montreal, find the average walking time of citizens to get to the closest bus stop.
+Montreal's transit system is among the best in North America, but parts of the still are still desperately lacking service. We collected nearly 500M of data and calculated which areas of Montreal need help the most.
