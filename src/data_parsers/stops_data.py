@@ -18,12 +18,13 @@ print("done preparing")
 success_count = 0
 fail_count = 0
 
-with open("../../Borough_Results.txt", mode="w") as output_file:
+with open("../../Borough_Results.txt", mode="a") as output_file:
     try:
         for stop in stops:
             boro = Geolocation.getAddress('AIzaSyAgg6LrGSWMB_qXc9_I4kKn6Nx3lS-eChM', stop.lat, stop.lon)
             if boro is not None:
                 output_file.write(f"{stop.stop_id}, {stop.lat}, {stop.lon}, {boro}\n")
+                output_file.flush()
                 print(f"{stop.stop_id} , {stop.lat} , {stop.lon} , {boro}")
                 success_count += 1
             else:
