@@ -9,10 +9,16 @@ import json
 
 #Optional street_type: street_address | route | intersection | locality
 
+
+
 url = r'https://maps.googleapis.com/maps/api/geocode/json?'
 # url = r'https://danso.ca/aoueahtns/json?'
 
 def getAddress(key, lat, lon):
+    '''
+    Using google's Geolocation API, we can get the street address +
+    Borough that the coordinates point to.
+    '''
     req = url + 'latlng=' + lat + ',' + lon + '&location_type=ROOFTOP&result_type=street_address'+'&key=' + key
     response = requests.get(req)
     boro = None
