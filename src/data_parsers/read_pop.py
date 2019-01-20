@@ -17,6 +17,6 @@ def format_popfile(path):
             name = name.strip()
             burrows[name] = Arrondissement(name, stops, area, popu)
 
-    with open('../data/formated_boroughs.txt', 'w') as f_b:
+    with open('../data/formatted_boroughs.txt', 'w') as f_b:
         for boro in burrows:
             f_b.write(boro.nice_string)

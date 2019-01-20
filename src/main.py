@@ -1,4 +1,4 @@
-from data_parsers import read_stops, read_pop
+from data_parsers import read_stops, read_pop, link_data
 
 #Take the bus stops dataset and build a simplified dataset with the stop ids
 #the lattitude and longitude and the borough it belongs to
@@ -25,3 +25,7 @@ print("Done")
 print("Starting with the boroughs dataset")
 format_popfile(boroughs_path)
 print("Done")
+
+print("Creating ratings dataset")
+end_results()
+print("All Done")

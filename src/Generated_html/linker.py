@@ -8,9 +8,10 @@ borough=open("../data/formated_boroughs.txt","r")
 #Dictionnarys of calculated statistics
 counts=dict()
 ratios=dict()
-stop=stops.read()
 
+stop=stops.read()
 borough.readline()
+
 count=0
 name_list=[]
 ratio_list=[]

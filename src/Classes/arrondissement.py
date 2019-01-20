@@ -12,7 +12,7 @@ Represents a Borough
         return self.name + " has population " + str(self.population) + " and area " + str(self.area) + "km^-2"
 
     def nice_string(self):
-        return self.name + "\t" + self. area + "\t" + self.population
+        return self.name +','+self. area+','+ self.population + "\n"
 
     def density(self):
         return population / area
