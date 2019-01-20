@@ -10,8 +10,10 @@ with open(data_dir + "gtfs_stm/stops.txt") as stops_file:
         #print("stop_code:", stop_code)
         #print("stop_name:", stop_name)
         #print("coords: " + stop_lat + ", " + stop_lon)
-        set_of_coord.add((stop_lat,stop_lon))
+        if (stop_lat, stop_lon) in set_of_coord:
+            print("ERROR: " + stop_lat + ", " + stop_lon + " in set")
+        set_of_coord.add((stop_id, stop_lat,stop_lon))
         #print(set_of_coord)
-    
+
 print(len(set_of_coord))
 
