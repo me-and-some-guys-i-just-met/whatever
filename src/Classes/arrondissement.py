@@ -1,5 +1,7 @@
 class Arrondissement:
-
+'''
+Represents a Borough
+'''
     def __init__(self, name, stops, area, population):
         self.name = name
         self.stops = stops

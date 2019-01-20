@@ -1,3 +1,4 @@
+#DEPRECATED
 from local_data_dir import data_dir
 
 with open(data_dir + "gtfs_stm/trips.txt") as trips_file:
@@ -6,4 +7,3 @@ with open(data_dir + "gtfs_stm/trips.txt") as trips_file:
         route_id, unused, trip_id, unused, unused, unused, unused, unused, unused = line.split(",")
         print("route_id:", route_id)
         print("trip_id:", trip_id)
-

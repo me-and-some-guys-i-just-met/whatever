@@ -1,5 +1,7 @@
 class Stop:
-
+'''
+Represents a bus stop
+'''
     def __init__(self, stop_id = None, code = None, name = None, lat = None, lon = None, busses = None):
         self.stop_id = stop_id
         self.code = code

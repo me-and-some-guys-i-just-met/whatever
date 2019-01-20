@@ -2,6 +2,9 @@ from local_data_dir import data_dir
 import Geolocation
 from stop import Stop
 
+#The script that does all the heavy lifting. Take the data sets, sends a request
+#to the google maps API and outputs to a file
+
 stops = set()
 print(stops)
 

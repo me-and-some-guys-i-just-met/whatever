@@ -1,9 +1,11 @@
 import plotly
 import plotly.graph_objs as go
 
+#opens Ville de Montreal and STM datasets
 stops=open("../data/Borough_Results.txt","r")
 borough=open("../data/Boroughs_of_Montreal","r")
 
+#Dictionnarys of calculated statistics
 counts=dict()
 ratios=dict()
 stop=stops.read()
@@ -23,8 +25,7 @@ for name in borough:
     ratio=(the_count/((float(the_people)*float(the_area))))
     counts[the_name[0]]=the_count
     ratios[the_name[0]]=ratio*10000
-    
-    
+
 
 ##print(ratios)
 for i in ratios:
@@ -32,16 +33,14 @@ for i in ratios:
     ratio_list.append(ratios.get(i))
 
 
+#all the necessary code to have a nice pyplot
+
 trace = go.Table(
     header=dict(values=[' ', 'Borough', 'ratios']),
     cells=dict(values=[ [i for i in range(len(name_list))],
-                         name_list, ratio_list],
-                align = ['left']
-                         )
-                )
+                        name_list, ratio_list],align = ['left']))
+
 layout = dict(width=500, height=2000)
 data= [trace]
 fig2=dict(data=data, layout=layout)
 plotly.offline.plot(fig2, filename = 'basic_table2.html')
-    
-

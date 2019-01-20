@@ -1,6 +1,6 @@
 class BusLine(object):
     '''
-    This Bul
+    This BusLine class is supposed to hold basic info about a bus and all its stops
     '''
     def __init__(self, stop_list = [], bus_id = None):
         self.stop_list = stop_list
