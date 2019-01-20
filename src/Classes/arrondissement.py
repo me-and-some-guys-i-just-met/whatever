@@ -7,7 +7,7 @@ class Arrondissement:
         self.population = population
 
     def __repr__(self):
-        return self.name + " has population " + str(self.population)
+        return self.name + " has population " + str(self.population) + " and area " + str(self.area) + "km^-2"
 
     def density(self):
         return population / area

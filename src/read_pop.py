@@ -6,12 +6,12 @@ area = "FIXME"
 
 burrows = dict()
 
-with open("../data/population-quartiers-anciens-territoires-administratifs.csv") as pop_file:
-    for i in range(5):
-        pop_file.readline()
+# with open("../data/population-quartiers-anciens-territoires-administratifs.csv") as pop_file:
+with open("../data/Boroughs_of_Montreal") as pop_file:
+    pop_file.readline()
     for line in pop_file:
-        name, unused, popu = line.strip().split(',')
-        name = name.strip('"')
+        name, popu, area = line.strip().split()
+        name = name.strip()
         burrows[name] = Arrondissement(name, stops, area, popu)
 
 for boro in burrows:
